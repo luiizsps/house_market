@@ -3,7 +3,7 @@
 Imagine que você é um investidor imobiliário em King County, USA. Você deseja comprar um casa e revendê-la, obtendo o maior lucro possível. Neste projeto, iremos explorar os dados de vendas de casas na região, com o objetivo de responder às seguintes perguntas:
 - Qual casa você deve comprar? Qual o custo estimado de compra?
 - Quando a casa deve ser vendida? Por qual valor?
-- Você fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma?
+- Você deve fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma?
 
 ## Base de Dados
 Nossa base de dados possui as seguintes informações:
