@@ -38,17 +38,14 @@ Our dataset contains the following information:
 
 ## 🧱 Project Structure
 
+```
 house_market/
 │
-
 ├── datasets/
-
 ├── house_market.ipynb
-
 ├── README.md
-
 └── requirements.txt
-
+```
 ---
 
 ## 🚀 Installation
