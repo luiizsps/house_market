@@ -1,33 +1,76 @@
 # House Market
 
-Imagine que você é um investidor imobiliário em King County, USA. Você deseja comprar um casa e revendê-la, obtendo o maior lucro possível. Neste projeto, iremos explorar os dados de vendas de casas na região, com o objetivo de responder às seguintes perguntas:
-- Qual casa você deve comprar? Qual o custo estimado de compra?
-- Quando a casa deve ser vendida? Por qual valor?
-- Você deve fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma?
+Imagine you're a real estate investor in King County, USA. You want to buy a house and resell it, aiming for the highest possible profit. In this project, we will explore house sales data from the region to answer the following questions:
 
-## Base de Dados
-Nossa base de dados possui as seguintes informações:
+- Which house should you buy? What is the estimated purchase cost?
+- When should you sell the house? For how much?
+- Should you renovate the house to increase its selling price? What changes are recommended? How much value does each renovation option add?
 
-| Coluna             | Descrição                                                                 |
-|--------------------|---------------------------------------------------------------------------|
-| **id**             | Identificador único do imóvel.                                            |
-| **date**           | Data do registro da venda do imóvel.                                      |
-| **price**          | Preço de venda do imóvel (em dólares).                                    |
-| **bedrooms**       | Número de quartos no imóvel.                                               |
-| **bathrooms**      | Número de banheiros no imóvel (pode incluir frações, como 1.5).            |
-| **sqft_living**    | Área interna útil da casa em pés quadrados (1 pé² ≈ 0,093 m²).             |
-| **sqft_lot**       | Área total do terreno em pés quadrados.                                   |
-| **floors**         | Número de andares da residência.                                           |
-| **waterfront**     | Indica se o imóvel possui vista direta para a água (0 = não, 1 = sim).     |
-| **view**           | Índice de qualidade da vista (escala de 0 a 4).                            |
-| **condition**      | Índice de condição geral do imóvel (escala de 1 a 5).                      |
-| **grade**          | Classificação da construção e design do imóvel (escala de 1 a 13).         |
-| **sqft_above**     | Área construída acima do nível do solo, em pés quadrados.                  |
-| **sqft_basement**  | Área do porão, em pés quadrados.                                           |
-| **yr_built**       | Ano de construção do imóvel.                                               |
-| **yr_renovated**   | Ano da última reforma (0 se nunca foi reformado).                         |
-| **zipcode**        | Código postal da localização do imóvel.                                   |
-| **lat**            | Latitude da localização geográfica do imóvel.                             |
-| **long**           | Longitude da localização geográfica do imóvel.                            |
-| **sqft_living15**  | Área interna média das 15 casas vizinhas mais próximas, em pés quadrados. |
-| **sqft_lot15**     | Área média dos terrenos das 15 casas vizinhas mais próximas.              |
+## Dataset
+
+Our dataset contains the following information:
+
+| Column             | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| **id**             | Unique identifier for the property.                                         |
+| **date**           | Date of the property's sale record.                                         |
+| **price**          | Sale price of the property (in USD).                                        |
+| **bedrooms**       | Number of bedrooms in the house.                                            |
+| **bathrooms**      | Number of bathrooms (may include fractions, such as 1.5).                   |
+| **sqft_living**    | Usable indoor living area in square feet (1 ft² ≈ 0.093 m²).                |
+| **sqft_lot**       | Total lot area in square feet.                                              |
+| **floors**         | Number of floors in the house.                                              |
+| **waterfront**     | Indicates if the property has a waterfront view (0 = no, 1 = yes).          |
+| **view**           | View quality index (scale from 0 to 4).                                     |
+| **condition**      | Overall condition index (scale from 1 to 5).                                |
+| **grade**          | Property's construction and design quality (scale from 1 to 13).            |
+| **sqft_above**     | Square footage of the area above ground level.                              |
+| **sqft_basement**  | Square footage of the basement area.                                        |
+| **yr_built**       | Year the property was built.                                                |
+| **yr_renovated**   | Year of the last renovation (0 if never renovated).                         |
+| **zipcode**        | Zip code of the property's location.                                        |
+| **lat**            | Latitude of the property's geographical location.                           |
+| **long**           | Longitude of the property's geographical location.                          |
+| **sqft_living15**  | Average indoor living area of the 15 nearest houses, in square feet.        |
+| **sqft_lot15**     | Average lot area of the 15 nearest houses.                                  |
+
+---
+
+## 🧱 Project Structure
+
+house_market/
+│
+├── datasets/
+├── house_market.ipynb
+├── README.md
+└── requirements.txt
+
+---
+
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/luiizsps/house_market.git
+cd house_market/
+```
+
+---
+
+## Create a virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate 
+```
+
+---
+
+## Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
